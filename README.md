@@ -2,6 +2,17 @@
 
 Este laboratorio tiene como objetivo proporcionar una introducción práctica a las pruebas unitarias en aplicaciones React utilizando Jest y React Testing Library.
 
+## HU: Chat con el repartidor
+
+### Happy Paths
+- El componente ChatRoom se genera empleando la id del pedido seleccionado de estado "en camino" para crear el room
+- El cliente/repartidor puede enviar/recibir mensajes en el chat
+- El cliente/repartidor puede ver los mensajes ya escritos anteriormente en el chat
+- La conexión creada por Socket.IO funciona correctamente
+
+### Unhappy Paths
+- El componente ChatRoom no se genera empleando la id del pedido seleccionado de estado "entregado" o "cancelado" (genera un componente recibo de manera alternativa)
+- Intentar enviar un mensaje a un chat no existente (por chat_id no existente)
 ## Aplicación Todo List
 
 La aplicación desarrollada es una lista de tareas (Todo List) con las siguientes funcionalidades:
